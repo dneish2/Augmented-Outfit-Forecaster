@@ -35,7 +35,7 @@ fetch (api)
 
 function getOutfit(data) {
   //Declare variables
- fahrenheit = data.currently.temperature;
+ fahrenheit = (data.currently.temperature - 32) * (5/9);
 }
 
 
