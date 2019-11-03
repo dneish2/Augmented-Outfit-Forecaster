@@ -5,35 +5,10 @@
     -->
   <link rel="stylesheet" type=text/css href="index.css">
   <script src="index.js"></script>
-    <title>Augmente Outfit Forecaster</title>
+    <title>Augmented Outfit Forecaster</title>
   </head>
   <body>
  <h1 id="header"> Welcome To Our Augmented Outfit Forecaster 😊 </h1>
-
- <body onload="getLocation()"></body>
-
- <p id="demo"></p>
-
-<script>
-var x = document.getElementById("demo");
-var coordinates = "";
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  // x.innerHTML = "Latitude: " + position.coords.latitude +
-  // "<br>Longitude: " + position.coords.longitude; -->
-coordinates = position.coords.latitude + "," + position.coords.longitude;
-}
-
-</script>
-
 
 
   </body>
