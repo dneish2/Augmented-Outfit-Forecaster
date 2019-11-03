@@ -61,12 +61,14 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
-var fs = require('fs');
+let myData = {
+  level: "level",
+  extra: 1
+};
 
-//create a file named mynewfile3.txt:
-fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
-  if (err) throw err;
-  console.log('Saved!');
+localStorage.setItem("Levels", myData);
+console.log(localStorage);
+
 });
 
 }
