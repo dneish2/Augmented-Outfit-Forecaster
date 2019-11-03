@@ -61,7 +61,21 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
+var myObject = { name: "simon", surname: "goellner" };
+// convert to json string
+var myJSON = JSON.stringify( myObject );
 
+var $link = $("<a />");
+// encode any special characters in the JSON
+var text = encodeURIComponent( myJSON );
+
+// <a download="filename.txt" href='data:application/octet-stream,...'></a>
+$link
+  .attr( "download", "filename.txt" )
+  .attr( "href", "data:application/octet-stream," + text )
+  .appendTo( "body" )
+  .get(0)
+  .click()
 
 }
 
