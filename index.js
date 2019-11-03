@@ -65,7 +65,7 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 
 let myData = {
   level: 56 ,
-  extra: e34
+  extra: 4
 };
 
 let myData_serialized = JSON.stringify(myData);
