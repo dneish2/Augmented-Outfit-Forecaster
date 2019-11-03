@@ -31,9 +31,8 @@ fetch (api)
 
 function getOutfit() {
   //Declare variables
-  var fahrenheit = (data.currently.temperature * 9 / 5 + 32).toFixed(1) + "&degF";
-  var description = data.currently.summary;
-  var icon = "wi wi-forecast-io" + data.currently.icon;
+  document.getElementById('summary').textContent = json.currently.summary;
+  document.getElementById('temperature').textContent = json.temperature;
 
 
 
