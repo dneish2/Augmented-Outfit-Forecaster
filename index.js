@@ -71,7 +71,7 @@ fs.writeFile('Clothes.txt', file, (err) => {
     if (err) throw err;
 })
 
-
+}
 
 
   //Declare Temperature Ranges For internal use
