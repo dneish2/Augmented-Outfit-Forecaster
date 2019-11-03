@@ -1,6 +1,6 @@
 //JavaScript File
 //Dark Sky Api Requests
-
+require('node-fetch');
 var x = document.getElementById("demo");
 var coordinates = "";
 
@@ -47,4 +47,3 @@ fetch(req)
   .then (j) =>{
     console.log('JSON data provided');
   })
-  
