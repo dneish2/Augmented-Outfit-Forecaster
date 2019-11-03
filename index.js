@@ -3,6 +3,8 @@
 
 var x = document.getElementById("demo");
 var coordinates = "";
+var fahrenheit = "";
+var globaldata;
 
 function getLocation() {
  if (navigator.geolocation) {
@@ -26,15 +28,13 @@ fetch (api)
 })
 .then(data => {
   console.log(data);
-  return data;
-
-  var fahrenheit = data.currently.temperature;
+  globaldata=data;
 });
 }
 
 function getOutfit(data) {
   //Declare variables
-var fahrenheit = data.currently.temperature;
+ fahrenheit = data.currently.temperature;
 
 
 
