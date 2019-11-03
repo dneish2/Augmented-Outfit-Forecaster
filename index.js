@@ -17,8 +17,9 @@ function showPosition(position) {
  // x.innerHTML = "Latitude: " + position.coords.latitude +
  // "<br>Longitude: " + position.coords.longitude; -->
 coordinates = position.coords.latitude + "," + position.coords.longitude;
-
 }
+</script>
+//// API FETCHING
 /*
 let fetch = require('node-fetch');
 
