@@ -60,8 +60,8 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 {
   extra = 1;
 }
+})
 
-}
 let file = "User Level Is: " + level +"\n" + "User Extra : " + extra;
 console.log(file);
 // Write data in 'Output.txt' .
@@ -69,6 +69,7 @@ fs.writeFile('Clothes.txt', file, (err) => {
 
     // In case of a error throw err.
     if (err) throw err;
+
 }
 
 
