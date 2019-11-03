@@ -61,13 +61,7 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
-let myData = {
-  level: "level",
-  extra: 1
-};
 
-localStorage.setItem("Levels", myData);
-console.log(localStorage);
 
 });
 
