@@ -22,20 +22,16 @@ const api = `${proxy}https://api.darksky.net/forecast/c9eff229d9e3b4b0f65ce1f916
 
 fetch (api)
 .then(response => {
-  return response.json();
+  //return response.json();
 })
 .then(data => {
   console.log(data);
 });
-document.getElementById('summary').textContent = json.currently.summary;
-document.getElementById('temperature').textContent = json.temperature;
 }
 
-function getOutfit() {
+function getOutfit(data) {
   //Declare variables
-  document.getElementById('summary').textContent = json.currently.summary;
-  document.getElementById('temperature').textContent = json.temperature;
-
+var fahrenheit = data.
 
 
   //Declare Temperature Ranges For internal use
