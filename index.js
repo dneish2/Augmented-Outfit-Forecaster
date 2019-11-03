@@ -27,6 +27,8 @@ fetch (api)
 .then(data => {
   console.log(data);
 });
+document.getElementById('summary').textContent = json.currently.summary;
+document.getElementById('temperature').textContent = json.temperature;
 }
 
 function getOutfit() {
