@@ -1,7 +1,6 @@
 //JavaScript File
 //Dark Sky Api Requests
 
-
 var x = document.getElementById("demo");
 var coordinates = "";
 
@@ -28,6 +27,8 @@ fetch (api)
 .then(data => {
   console.log(data);
 });
+
+function getOutfit()
 }
 
 //// API FETCHING
