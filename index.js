@@ -66,13 +66,7 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 }
 
 var fs = require('fs');
-let file = "User Level Is: " + level +"\n" + "User Extra : " + extra;
 
-// Write data in 'Output.txt' .
-fs.writeFile('Clothes.txt', file, (err) => {
-
-    // In case of a error throw err.
-    if (err) throw err;
 
 
   //Declare Temperature Ranges For internal use
