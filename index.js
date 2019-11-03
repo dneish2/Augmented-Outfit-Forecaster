@@ -62,9 +62,6 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
-}
-
-// Data which will write in a file.
 let file = "User Level Is: " level + "\n" "User Extra: ""+ extra;
 
 // Write data in 'Output.txt' .
