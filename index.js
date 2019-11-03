@@ -1,5 +1,6 @@
 //JavaScript File
 //Dark Sky Api Requests
+//File Write Require
 
 var x = document.getElementById("demo");
 var coordinates = "";
@@ -59,6 +60,54 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 {
   extra = 1;
 }
+
+const fs = require('fs');
+
+let file = "User Level Is: " + level +"\n" + "User Extra : " + extra;
+
+// Write data in 'Output.txt' .
+fs.writeFile('Clothes.txt', file, (err) => {
+
+    // In case of a error throw err.
+    if (err) throw err;
 })
 
 }
+
+
+  //Declare Temperature Ranges For internal use
+  //if (fahrenheit )
+
+
+
+
+//// API FETCHING
+/*
+let fetch = require('node-fetch');
+
+//let darksky = 'https://api.darksky.net/forecast/c9eff229d9e3b4b0f65ce1f916ee8145/';
+
+let uri = darksky + '/' + coordinates;
+console.log(uri);
+
+let options = {
+  method: 'GET'.
+  mode: 'cors'
+}
+
+let req = new fetch.Request(uri, options);
+
+fetch(req)
+  .then((response)=>{
+    if(response.ok){
+      return response.json();
+    }else{
+      throw new Error('BAD HTTP DUDE!')
+
+    }
+    }
+  })
+  .then (j) =>{
+    console.log('JSON data provided');
+  })
+  */
