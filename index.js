@@ -61,8 +61,4 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
-
-
-});
-
 }
