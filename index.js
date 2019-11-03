@@ -1,6 +1,8 @@
 //JavaScript File
 //Dark Sky Api Requests
+//File Write Require
 
+var fs = require('fs');
 var x = document.getElementById("demo");
 var coordinates = "";
 var fahrenheit = "";
@@ -8,6 +10,7 @@ var globaldata;
 var condition = "";
 var level = 0;
 var extra = 0;
+
 
 function getLocation() {
  if (navigator.geolocation) {
@@ -60,6 +63,16 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 }
 
 }
+
+// Data which will write in a file.
+let file = "User Level Is: " level + "\n" "User Extra: ""+ extra;
+
+// Write data in 'Output.txt' .
+fs.writeFile('Clothes.txt', file, (err) => {
+
+    // In case of a error throw err.
+    if (err) throw err;
+})
 
 
 
