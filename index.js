@@ -73,3 +73,16 @@ console.log(myData_serialized);
 
 localStorage.setItem("myData", myData_serialized);
 console.log(localStorage);
+
+//Skycons
+
+skycons.add("icon1", Skycons.PARTLY_CLOUDY_DAY);
+
+ // ...or by the canvas DOM element itself.
+ skycons.add(document.getElementById("icon2"), Skycons.RAIN);
+
+ // if you're using the Forecast API, you can also supply
+ // strings: "partly-cloudy-day" or "rain".
+
+ // start animation!
+ skycons.play();
