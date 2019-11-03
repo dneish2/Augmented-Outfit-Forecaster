@@ -37,7 +37,7 @@ fetch (api)
 function getOutfit(data) {
   //Declare variables and states
  fahrenheit = (data.currently.temperature * 9/5) + 32;
- condition = (data.currently.icon);
+ //condition = (data.currently.icon);
 
 }
 
