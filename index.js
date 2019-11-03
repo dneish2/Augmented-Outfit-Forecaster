@@ -7,6 +7,7 @@ var fahrenheit = "";
 var globaldata;
 var condition = "";
 var level = 0;
+var extra = 0;
 
 function getLocation() {
  if (navigator.geolocation) {
@@ -41,17 +42,22 @@ function getOutfit(data) {
  condition = (data.currently.icon);
 
 //Current Time's Logistics
- if (fahrenheit >= 74)
+ if (fahrenheit >= 70)
  {
    level = 3;
  }
- else if (fahrenheit >= 67 && fahrenheit <= 73)
+ else if (fahrenheit >= 64 && fahrenheit <= 69)
  {
    level = 2;
  }
  else {
    level = 1;
  }
+
+if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condition == 'hail')
+{
+  extra = 1;
+}
 
 }
 
