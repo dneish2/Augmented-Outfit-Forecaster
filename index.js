@@ -18,21 +18,7 @@ function showPosition(position) {
  // "<br>Longitude: " + position.coords.longitude; -->
 coordinates = position.coords.latitude + "," + position.coords.longitude;
 
-const api = `https://api.darksky.net/forecast/c9eff229d9e3b4b0f65ce1f916ee8145/${coordinates}`;
-
-fetch(api)
-.then(response => {
-  return response.json();
-})
-.then(data =>{
-  console.log(data);
-});
 }
-
-
-
-</script>
-//// API FETCHING
 /*
 let fetch = require('node-fetch');
 
