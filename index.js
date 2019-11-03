@@ -68,5 +68,8 @@ let myData = {
   extra: extra
 };
 
+let myData_serialized = JSON.stringify(myObj);
+console.log(myData_serialized);
+
 localStorage.setItem("myData", myData);
 console.log(localStorage);
