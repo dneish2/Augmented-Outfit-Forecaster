@@ -27,6 +27,17 @@ fetch (api)
 .then(data => {
   console.log(data);
 });
+
+function getOutfit(data) {
+  //Declare variables
+var fahrenheit = data.currently.temperature;
+
+
+  //Declare Temperature Ranges For internal use
+  //if (fahrenheit )
+
+
+}
 }
 
 function getOutfit(data) {
