@@ -35,6 +35,10 @@ function getOutfit() {
   var description = data.currently.summary;
   var icon = "wi wi-forecast-io" + data.currently.icon;
 
+  var tomorrowfahr =
+  var tomorrowdesc =
+  var tomorrowicon =
+
   //Declare Temperature Ranges For internal use
   //if (fahrenheit )
 
