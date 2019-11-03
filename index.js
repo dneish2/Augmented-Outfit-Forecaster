@@ -64,11 +64,11 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 }
 
 let myData = {
-  level: level,
-  extra: extra
+  "level": level,
+  "extra": extra
 };
 
-let myData_serialized = JSON.stringify(myObj);
+let myData_serialized = JSON.stringify(myData);
 console.log(myData_serialized);
 
 localStorage.setItem("myData", myData);
