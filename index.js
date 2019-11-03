@@ -28,7 +28,6 @@ fetch (api)
 })
 .then(data => {
   console.log(data);
-  return globaldata;
   globaldata=data;
   getOutfit(globaldata);
 });
