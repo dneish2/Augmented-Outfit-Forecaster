@@ -28,7 +28,8 @@ fetch (api)
   console.log(data);
 });
 
-function getOutfit()
+function getOutfit() {
+
 }
 
 //// API FETCHING
