@@ -6,6 +6,7 @@ var coordinates = "";
 var fahrenheit = "";
 var globaldata;
 var condition = "";
+var level = 0;
 
 function getLocation() {
  if (navigator.geolocation) {
@@ -38,6 +39,19 @@ function getOutfit(data) {
   //Declare variables and states
  fahrenheit = (data.currently.temperature * 9/5) + 32;
  condition = (data.currently.icon);
+
+//Current Time's Logistics
+ if (fahrenheit >= 74)
+ {
+   level = 3;
+ }
+ else if (fahrenheit >= 67 && fahrenheit <= 73)
+ {
+   level = 2;
+ }
+ else {
+   level = 1;
+ }
 
 }
 
