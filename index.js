@@ -68,5 +68,5 @@ let myData = {
   extra: "0"
 };
 
-localStorage.setItem("myData, myObj");
+localStorage.setItem("myData", myData);
 console.log(localStorage);
