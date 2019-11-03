@@ -27,6 +27,7 @@ fetch (api)
 .then(data => {
   console.log(data);
 });
+}
 
 function getOutfit() {
 
