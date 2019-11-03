@@ -27,7 +27,8 @@ fetch (api)
   return response.json();
 })
 .then(data => {
-  console.log(globaldata);
+  console.log(data);
+  return globaldata;
   globaldata=data;
   getOutfit(globaldata);
 });
