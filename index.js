@@ -1,5 +1,5 @@
 //Dark Sky Api Requests
-<body onload="getLocation()"></body>
+
 
 <p id="demo"></p>
 
