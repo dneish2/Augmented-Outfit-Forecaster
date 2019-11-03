@@ -1,7 +1,7 @@
 //JavaScript File
 //Dark Sky Api Requests
 //File Write Require
-
+var fs = require('fs');
 var x = document.getElementById("demo");
 var coordinates = "";
 var fahrenheit = "";
@@ -60,8 +60,6 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 {
   extra = 1;
 }
-
-const fs = require('fs');
 
 let file = "User Level Is: " + level +"\n" + "User Extra : " + extra;
 
