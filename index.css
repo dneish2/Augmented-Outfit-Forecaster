@@ -4,3 +4,7 @@
 body {
   background-image: url("https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/2040/f/weather.jpg");
 }
+
+#w3-container blue {
+  text-align:center;
+}
