@@ -29,12 +29,14 @@ fetch (api)
 .then(data => {
   console.log(data);
   globaldata=data;
+  getOutfit(globaldata);
 });
 }
 
 function getOutfit(data) {
   //Declare variables
- fahrenheit = globaldata.currently.temperature;
+ fahrenheit = data.currently.temperature;
+}
 
 
 
@@ -43,7 +45,7 @@ function getOutfit(data) {
   //if (fahrenheit )
 
 
-}
+
 
 //// API FETCHING
 /*
