@@ -61,7 +61,6 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
-<script data-main="scripts/main" src="scripts/require.js"></script>
 const fs = require('fs');
 
 let file = "User Level Is: " + level +"\n" + "User Extra : " + extra;
