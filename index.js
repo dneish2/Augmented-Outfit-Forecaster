@@ -20,9 +20,9 @@ coordinates = position.coords.latitude + "," + position.coords.longitude;
 
 //// API FETCHING
 
-let fetch = require('node-fetch');
+//let fetch = require('node-fetch');
 
-let darksky = 'https://api.darksky.net/forecast/c9eff229d9e3b4b0f65ce1f916ee8145/';
+//let darksky = 'https://api.darksky.net/forecast/c9eff229d9e3b4b0f65ce1f916ee8145/';
 
 let uri = darksky + '/' + coordinates;
 console.log(uri);
