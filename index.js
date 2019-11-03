@@ -54,7 +54,7 @@ function getOutfit(data) {
    level = 1;
  }
 
-if (condition != 'rain' || condition == 'snow' || condition == 'sleet' || condition == 'hail')
+if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condition == 'hail')
 {
   extra = 1;
 }
