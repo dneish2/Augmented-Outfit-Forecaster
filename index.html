@@ -13,7 +13,7 @@
 
  <body onload="getLocation()"></body>
 
- <!--- <p id="demo"></p>  -->
+ <p id="demo"></p>
 
 <script>
 var x = document.getElementById("demo");
@@ -27,10 +27,11 @@ function getLocation() {
   }
 }
 
+<!----
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
-
+  ---->
 
 coordinates = position.coords.latitude + "," + position.coords.longitude;}
 </script>
