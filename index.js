@@ -5,7 +5,7 @@ var x = document.getElementById("demo");
 var coordinates = "";
 var fahrenheit = "";
 var globaldata;
-var icon = "";
+var condition = "";
 
 function getLocation() {
  if (navigator.geolocation) {
@@ -37,7 +37,7 @@ fetch (api)
 function getOutfit(data) {
   //Declare variables and states
  fahrenheit = (data.currently.temperature * 9/5) + 32;
- //condition = (data.currently.icon);
+ condition = (data.currently.icon);
 
 }
 
