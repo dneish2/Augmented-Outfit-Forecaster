@@ -22,7 +22,7 @@ const api = `${proxy}https://api.darksky.net/forecast/c9eff229d9e3b4b0f65ce1f916
 
 fetch (api)
 .then(response => {
-  //return response.json();
+  return response.json();
 })
 .then(data => {
   console.log(data);
