@@ -64,7 +64,7 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 }
 
 let myData = {
-  level: 'level',
+  level: level,
   extra: 'extra'
 };
 
