@@ -1,4 +1,5 @@
 //Dark Sky Api Requests
+<html>
 <body onload="getLocation()"></body>
 
 <p id="demo"></p>
@@ -52,3 +53,4 @@ fetch(req)
     console.log('JSON data provided');
   })
   </script>
+  </html>
