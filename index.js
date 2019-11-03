@@ -69,7 +69,7 @@ fs.writeFile('Clothes.txt', file, (err) => {
 
     // In case of a error throw err.
     if (err) throw err;
-}
+})
 
 
 
