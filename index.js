@@ -31,7 +31,7 @@ fetch (api)
 
 function getOutfit(data) {
   //Declare variables
-var fahrenheit = data.
+var fahrenheit = data;
 
 
   //Declare Temperature Ranges For internal use
