@@ -1,6 +1,6 @@
 //JavaScript File
 //Dark Sky Api Requests
-require('node-fetch');
+let fetch = require('node-fetch');
 var x = document.getElementById("demo");
 var coordinates = "";
 
