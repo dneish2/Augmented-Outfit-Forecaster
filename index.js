@@ -64,8 +64,8 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
 }
 
 let myData = {
-  level: "1",
-  extra: "0"
+  level: level,
+  extra: level
 };
 
 localStorage.setItem("myData", myData);
