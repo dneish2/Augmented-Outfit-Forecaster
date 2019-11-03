@@ -2,7 +2,6 @@
 //Dark Sky Api Requests
 //File Write Require
 
-var fs = require('fs');
 var x = document.getElementById("demo");
 var coordinates = "";
 var fahrenheit = "";
@@ -62,7 +61,9 @@ if (condition == 'rain' || condition == 'snow' || condition == 'sleet' || condit
   extra = 1;
 }
 
-let fs = "User Level Is: " + level +"\n" + "User Extra : " + extra;
+const fs = require('fs');
+
+let file = "User Level Is: " + level +"\n" + "User Extra : " + extra;
 
 // Write data in 'Output.txt' .
 fs.writeFile('Clothes.txt', file, (err) => {
