@@ -1,5 +1,6 @@
 //JavaScript File
 //Dark Sky Api Requests
+<script>
 let fetch = require('node-fetch');
 var x = document.getElementById("demo");
 var coordinates = "";
@@ -17,7 +18,7 @@ function showPosition(position) {
  // "<br>Longitude: " + position.coords.longitude; -->
 coordinates = position.coords.latitude + "," + position.coords.longitude;
 }
-
+</script>
 //// API FETCHING
 /*
 let fetch = require('node-fetch');
